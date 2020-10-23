@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+
+#countainer{
+    height: 400vh;
+    display: grid;
+    grid-template-rows: 10% 2% 30% 30% 28% 2%;
+    grid-template-columns: 15% repeat(4, 1fr);
+    grid-template-areas:
+    'he he he he he'
+    'na na na na na'
+    'as s1 s1 s1 s1'
+    'as s2 s2 s2 s2'
+    'as s3 s3 s3 s3'
+    'fo fo fo fo fo'
+    ;
+}
+aside{
+    grid-area: as;
+}
+header{
+    grid-area: he;
+    background-color: orange;
+}
+nav{
+    grid-area: na;
+    background-color: orange;
+}
+section#upper{
+    grid-area: s1;
+    background-color: orangered;
+    display: grid;
+    grid-template-areas: 
+    'arl fig'
+    ;
+}
+    article#left{
+        grid-area: arl;
+    }
+    figure{
+        background-color: plum;
+        grid-area: fig;
+    }
+
+section#middel{
+    grid-area: s2;
+    background-color: black;
+    display: grid;
+    grid-template-areas: 'a';
+}
+    article#big{
+        grid-area: a;
+    }
+
+section#lower{
+    grid-area: s3;
+    background-color: orangered;
+    display: grid;
+    grid-template-areas: 
+    'au sv'
+    'ad ad'
+    ;
+}
+    article#uppA{
+        grid-area: au;
+        background-color: sandybrown;
+    }
+    article#downA{
+        grid-area: ad;
+    }
+    section#vid{
+        grid-area: sv;
+        ;
+    }
+
+footer{
+    grid-area: fo;
+    background-color: blanchedalmond;
+}
