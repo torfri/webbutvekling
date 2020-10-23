@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    'h h h h h h'
+    'n n n n n n'
+    's a1 a1 a1 a1 a1'
+    's a1 a1 a1 a1 a1'
+    's a2 a2 a2 a2 a2'
+    's a2 a2 a2 a2 a2'
+    's a3 a3 a3 a3 a3' 
+    'o o o o o o'
+    ;
+
+}
+
+header{
+    grid-area: h;
+    background-color: salmon;
+    
+    overflow-y: scroll;
+}
+
+#a1{
+    grid-area: a1;
+    background-color: navajowhite;
+    
+}
+#a2{
+    grid-area: a2;
+    background-color: navajowhite;
+    
+}
+#a3{
+    grid-area: a3;
+    background-color: navajowhite;
+    
+}
+
+aside{
+    grid-area: s;
+    background-color: greenyellow;
+   
+}
+
+footer{
+    grid-area: o;
+    background-color: salmon;
+    
+}
+nav{
+    grid-area: n;
+    background-color: sandybrown;
+    
+}

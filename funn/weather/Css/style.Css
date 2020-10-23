@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+
+#continer{
+    display: grid;
+    height: 200vh;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    'h'
+    'm'
+    'f' 
+    ;
+}
+header{
+    grid-area: h;
+    background-color: aquamarine
+}
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-rows: 10% 30% 30% 30%;
+    grid-template-columns: 10% auto auto auto 10%;
+    background-color: aqua;
+    grid-template-areas: 
+    'al n n n ar'
+    'al s s s ar'
+    'al s s s ar'
+    'al s s s ar'
+     ;
+}
+    nav#main{
+        grid-area: n;
+        background-color: rgb(19, 235, 235);
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        
+    }
+        nav.navbutt{
+            text-align: center;
+            flex: 25%;
+            margin: auto;
+        }
+
+
+    section#big{
+        grid-area: s;
+        display: grid;
+        grid-template-columns: 50%;
+        background-color: teal;
+        grid-template-areas: 
+        'a simg'
+        ;
+    }
+        article{
+            grid-area: a;
+        }
+        section#img{
+            grid-area: simg;
+            background-image: url("../img/Clothing.jpg") ;
+            background-size: cover;
+            background-position: center;
+
+            
+        }
+
+    aside#left{
+        grid-area: al;
+        background-color: tomato;
+    }
+    aside#right{
+        grid-area: ar;
+        background-color: tomato;
+    }
+
+    footer{
+        grid-area: f;
+        background-color: aquamarine;
+        text-align: center;
+    }
+    #weather{
+        display: inline;
+    }
+    #in{
+        display: inline;
+    }
+

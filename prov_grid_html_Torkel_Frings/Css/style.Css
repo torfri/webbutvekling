@@ -1,0 +1,82 @@
+body{
+    margin: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(../Img/bonfiretipi.gif);
+}
+
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% auto 15%;
+    grid-template-areas: 
+    'h n'
+    'm m'
+    'f f'
+    ;
+}
+header{
+    grid-area: h;
+    background-color: blanchedalmond;
+}
+nav{
+    grid-area: n;
+    background-color: blue;
+}
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    's1 s2 as'
+    ;
+}
+    section#left{
+        grid-area: s1;
+        background-color: cadetblue;
+        display: grid;
+        grid-gap: inherit;
+        padding: inherit;
+        grid-template-areas: 
+        'au'
+        'ad'
+        ;
+    }
+        article#upp{
+            grid-area: au;
+            background-color: white;
+        }
+        article#down{
+            grid-area: ad;
+            background-color: white;
+        }
+    section#right{
+        grid-area: s2;
+        background-color: cadetblue;
+        display: grid;
+        grid-gap: inherit;
+        padding: inherit;
+        grid-template-areas: 
+        'al ar'
+        ;
+    }
+        article#artleft{
+            grid-area: al;
+            background-color: white;
+        }
+        article#artright{
+            grid-area: ar;
+            background-color: white;
+        }
+    aside{
+        grid-area: as;
+        background-color: tomato;
+    }
+
+footer{
+    grid-area: f;
+    background-color: brown;
+}

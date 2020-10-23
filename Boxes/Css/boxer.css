@@ -1,0 +1,11 @@
+a{
+    display: block;
+    border: 15px hotpink dotted;
+    padding: 10px 20px 5px 50px;
+    margin: 100px;
+    background-color: darkturquoise;
+}
+body{
+    background-color: darkviolet;
+}
+

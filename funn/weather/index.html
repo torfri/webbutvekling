@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.Css">
+    
+    
+    <title>Kläder efter väder</title>
+</head>
+<body onload="favorites()">
+    
+    <div id="continer">
+        <header><h1>Kläder efter väder</h1></header>
+        <main>
+            <aside id="left"></aside>
+            <nav id="main">
+                <nav id="local" class="navbutt">local</nav>
+                <nav id="fav1" class="navbutt">favorite</nav>
+                <nav id="fav2" class="navbutt">favorite</nav>
+                <nav class="navbutt">search</nav>
+            </nav>
+
+            <section id="big">
+                <article>
+                    <p id="in">vädret i </p>
+                    <p id="stad">_____</p>
+                    <p id="in"> är</p>
+                    <p id="weather"></p>
+                    
+                </article>
+                <section id="img"></section>
+            </section>
+            <aside id="right"></aside>
+        </main>
+        <footer>Made by Torkel</footer>
+    </div>
+    <script src="Js/temperature.js"></script>
+</body>
+</html>

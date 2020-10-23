@@ -1,0 +1,18 @@
+body{
+    background:orange;
+    font-family: OpenDyslexic;
+    font-weight: 300;
+    text-align: center;
+
+}
+ul,ol{
+    list-style-position: inside;
+}
+
+.claser{
+    color:royalblue;
+}
+
+a:hover{
+    color:tomato;
+}

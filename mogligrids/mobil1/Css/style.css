@@ -1,0 +1,32 @@
+body{
+    margin: 1%;
+}
+#vraper{
+    display: grid;
+    height: 100vh;
+    grid-gap: 1%;
+    grid-template-rows: 1fr 8fr 4fr 1fr;
+    grid-template-areas: 
+    'h'
+    'a'
+    's'
+    'f'
+    ;
+}
+
+header{
+    grid-area: h;
+    background-color: rgb(218, 218, 115);
+}
+article{
+    grid-area: a;
+    background-color: rgb(218, 218, 115);
+}
+section{
+    grid-area: s;
+    background-color: rgb(218, 218, 115);
+}
+footer{
+    grid-area: f;
+    background-color:  rgb(218, 218, 115);
+}
