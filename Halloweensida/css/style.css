@@ -42,13 +42,12 @@ section#upper{
         grid-area: arl;
     }
     #img{
-        background-color: plum;
         grid-area: fig;
     }
 
 section#middel{
     grid-area: s2;
-    background-color: black;
+    background-color: orangered;
     display: grid;
     grid-template-areas: 'a';
 }
@@ -60,21 +59,28 @@ section#lower{
     grid-area: s3;
     background-color: orangered;
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     'au sv'
     'ad ad'
     ;
+    
 }
     article#uppA{
         grid-area: au;
-        background-color: sandybrown;
     }
     article#downA{
         grid-area: ad;
     }
     section#vid{
         grid-area: sv;
-        ;
+        background-color: black;
+
+    }
+    video{
+        height: 100%;
+        width: 100%;
     }
 
 footer{
