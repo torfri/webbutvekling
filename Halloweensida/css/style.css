@@ -3,9 +3,11 @@
 }
 
 #countainer{
+    background-image: url(../img/spookynight.png);
+    background-size: cover;
     height: 400vh;
     display: grid;
-    grid-template-rows: 10% 2% 30% 30% 28% 2%;
+    grid-template-rows: 4% 1% 31% 31% 31% 2%;
     grid-template-columns: 15% repeat(4, 1fr);
     grid-template-areas:
     'he he he he he'
@@ -29,6 +31,7 @@ nav{
 }
 section#upper{
     grid-area: s1;
+    grid-template-columns: 50% 50%;
     background-color: orangered;
     display: grid;
     grid-template-areas: 
@@ -38,7 +41,7 @@ section#upper{
     article#left{
         grid-area: arl;
     }
-    figure{
+    #img{
         background-color: plum;
         grid-area: fig;
     }
@@ -77,4 +80,9 @@ section#lower{
 footer{
     grid-area: fo;
     background-color: blanchedalmond;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
