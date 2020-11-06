@@ -78,7 +78,6 @@ section#lower{
 }
     article#uppA{
         grid-area: au;
-        
     }
     article#downA{
         grid-area: ad;
@@ -102,6 +101,7 @@ footer{
     font-size: 2em;
     text-decoration: none;  
     font-family:Lucida Sans Unicode;
+    
 }
 footer>a{
     color: black;   
@@ -121,13 +121,17 @@ img#github{
 
 nav > a{
     color:black;
+    border: solid rgba(34, 5, 5, 0.5) 2px;
     text-decoration: none;
     background-color: brown;
     padding: 1%;
     text-align: center;
-    border-radius: 25%;
+    border-radius: 30%;
     width: 10%;
     
+}
+nav > a:hover{
+    background-color: rgb(133, 35, 35);
 }
 h5{
     text-align: center;
